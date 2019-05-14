@@ -81,7 +81,8 @@ is implemented at the OS scope, I feel my application will be much more portable
 computer has the requirement to implement TCP. 
 
 For my hashing scheme I decided to make a fixed table of 65535 since there are so many repeated words
-in the English language. For dealing with collisions, I chose to user quadratic probing to try and space out the table and hopefully reduce the number of collisions. My personal hashing algorithm implements a
+in the English language. For dealing with collisions, I chose to user quadratic probing to try and space 
+out the table and hopefully reduce the number of collisions. My personal hashing algorithm implements a
 variation on the sum hash version however, in order to reduce collision of  words like anagrams, I used
 a version that multiplies the characters ASCII value by its byte position in the string. The indexing
 is in high byte order down (reverse indexing). The value calculated is then added together to get the
@@ -114,8 +115,3 @@ can shut it off without having to use CTRL^C or another terminal to kill the pro
 tell from my testing, the hashing works as expected for all three types. 
 
 -------------------------------------------------------------------------------------------------------
-NOTES:
-
-I did not successfully complete the bonus.
--------------------------------------------------------------------------------------------------------
-
